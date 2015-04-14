@@ -7,6 +7,52 @@
 [![license](https://img.shields.io/badge/license-ISC-373737.svg?style=flat-square)][license]
 [![gitter](https://img.shields.io/badge/GITTER-join%20chat%20→-00d86e.svg?style=flat-square)][gitter]
 
+`nano-promises` is a lightweight wrapper around the fabulous
+[`nano`](https://github.com/dscape/nano) driver.  It provides
+the same features but uses promises instead of callbacks.
+
+## Example
+```js
+import nano from 'nano';
+import prom from 'nano-promises';
+
+var db = prom(nano('http://localhost:5984')).db.use('test');
+
+db.insert({'crazy': true, 'rabbit')
+  .then(function([body, headers]) {
+    console.log(body)
+  })
+  .catch(function(err) {
+    console.error(err);
+  });
+
+```
+
+`nano-promises` promises always resolve to a value of the form `[body,
+headers]` or reject to a value of the form `error`.  So it is important to
+use desructuring in the `then` handler of the promise.
+
+## `async/await`
+
+The above example does not seem convincing to swith to a promise-based
+approach. `nano-promises` becomes very handy when used together
+with the `async/await` proposal for ES7:
+
+```js
+var isRabbitCrazy = async function() {
+  try {
+    var [doc] = await db.get('rabbit');
+    return doc.crazy;
+  } catch(err) {
+    console.log('error fetching rabbit:', err);
+    throw err;
+  }
+};
+
+```
+
+I don't know about you but I find this very expressive!
+
 
 ### License
 This code is licensed under the [ISC license][license]
@@ -17,3 +63,4 @@ This code is licensed under the [ISC license][license]
 [david-dev]: https://david-dm.org/romeovs/nano-promises#info=devDependencies
 [license]:   ./LICENSE
 [gitter]:    https://gitter.im/romeovs/nano-promises?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[nano]:      https://github.com/dscape/nano#nanousename
