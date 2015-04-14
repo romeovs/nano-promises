@@ -8,7 +8,7 @@
 [![gitter](https://img.shields.io/badge/GITTER-join%20chat%20→-00d86e.svg?style=flat-square)][gitter]
 
 `nano-promises` is a lightweight wrapper around the fabulous
-[`nano`](https://github.com/dscape/nano) driver.  It provides
+[`nano`][nano] driver.  It provides
 the same features but uses promises instead of callbacks.
 
 ## Example
@@ -53,6 +53,10 @@ var isRabbitCrazy = async function() {
 
 I don't know about you but I find this very expressive!
 
+
+### Attribution
+I love the [`nano`][nano] library.  It has a very good api design and there's
+a lot of work put into it! 
 
 ### License
 This code is licensed under the [ISC license][license]
