@@ -1,0 +1,29 @@
+{
+  "name": "nano-promises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "compile":     "babel --optional runtime src -d build",
+    "test":        "lab -T babel.js -S $@",
+    "coverage":    "npm run test -- --coverage -r lcov | ./node_modules/.bin/coveralls",
+    "hcoverage":   "npm run test -- --coverage -r html -o coverage.html && open coverage.html",
+    "lint":        "eslint -c .eslintrc src/**.js || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romeovs/nano-promises.git"
+  },
+  "author": "Romeo Van Snick <romeovs@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.0.10",
+    "babel-eslint": "^2.0.2",
+    "babel-runtime": "^5.0.10",
+    "chai": "^2.2.0",
+    "coveralls": "^2.11.2",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.8.0",
+    "lab": "^5.5.1"
+  }
+}
