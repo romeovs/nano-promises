@@ -4,11 +4,11 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "compile":     "babel --optional runtime src -d build",
-    "test":        "lab -T babel.js -S $@",
-    "coverage":    "npm run test -- --coverage -r lcov | ./node_modules/.bin/coveralls",
-    "hcoverage":   "npm run test -- --coverage -r html -o coverage.html && open coverage.html",
-    "lint":        "eslint -c .eslintrc src/**.js || true"
+    "compile": "babel --optional runtime src -d build",
+    "test": "lab -T babel.js -S $@",
+    "coverage": "npm run test -- --coverage -r lcov | ./node_modules/.bin/coveralls",
+    "hcoverage": "npm run test -- --coverage -r html -o coverage.html && open coverage.html",
+    "lint": "eslint -c .eslintrc src/**.js || true"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,10 @@
   "license": "ISC",
   "devDependencies": {
     "babel": "^5.0.10",
-    "babel-eslint": "^2.0.2",
+    "babel-eslint": "^3.0.1",
     "babel-runtime": "^5.0.10",
     "chai": "^2.2.0",
     "coveralls": "^2.11.2",
-    "gulp": "^3.8.11",
-    "gulp-eslint": "^0.8.0",
     "lab": "^5.5.1"
   }
 }
