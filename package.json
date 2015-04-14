@@ -22,7 +22,9 @@
     "babel-eslint": "^3.0.1",
     "babel-runtime": "^5.0.10",
     "chai": "^2.2.0",
+    "chai-as-promised": "^4.3.0",
     "coveralls": "^2.11.2",
-    "lab": "^5.5.1"
+    "lab": "^5.5.1",
+    "nano": "^6.1.2"
   }
 }
