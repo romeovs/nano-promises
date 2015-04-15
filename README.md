@@ -58,6 +58,9 @@ I don't know about you but I find this very expressive!
 I love the [`nano`][nano] library.  It has a very good api design and there's
 a lot of work put into it! 
 
+The code in this repo is mostly adapted from [`co-nano`][co-nano], but with
+promises instead of thunks.
+
 ### License
 This code is licensed under the [ISC license][license]
 
@@ -68,3 +71,4 @@ This code is licensed under the [ISC license][license]
 [license]:   ./LICENSE
 [gitter]:    https://gitter.im/romeovs/nano-promises?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [nano]:      https://github.com/dscape/nano#nanousename
+[co-nano]:    https://github.com/OlavHN/co-nano
