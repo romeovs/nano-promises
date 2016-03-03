@@ -60,6 +60,7 @@ var promisify = function(nano) {
   var dbMethods = [
     'insert'
   , 'destroy'
+  , 'follow'
   , 'get'
   , 'head'
   , 'copy'
