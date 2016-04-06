@@ -18,7 +18,7 @@ import prom from 'nano-promises';
 
 var db = prom(nano('http://localhost:5984')).db.use('test');
 
-db.insert({'crazy': true, 'rabbit')
+db.insert({ 'crazy': true }, 'rabbit')
   .then(function([body, headers]) {
     console.log(body)
   })
