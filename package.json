@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "lab -T babel.js -S $@",
+    "test": "lab -T babel.js -I __core-js_shared__ -S $@",
     "coverage": "npm run test -- --coverage -r lcov | ./node_modules/.bin/coveralls",
     "hcoverage": "npm run test -- --coverage -r html -o coverage.html && open coverage.html",
     "lint": "eslint -c .eslintrc src/**.js || true"
