@@ -67,6 +67,7 @@ var promisify = function(nano) {
   , 'bulk'
   , 'list'
   , 'fetch'
+  , 'fetchRevs'
   , 'view'
   , 'show'
   , 'atomic'

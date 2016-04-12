@@ -22,7 +22,9 @@
     "chai": "^2.2.0",
     "chai-as-promised": "^4.3.0",
     "coveralls": "^2.11.2",
-    "lab": "^5.5.1",
-    "nano": "^6.1.2"
+    "lab": "^5.5.1"
+  },
+  "dependencies": {
+    "nano": "^6.2.0"
   }
 }
