@@ -1,5 +1,7 @@
 # nano-promises
 
+[![Join the chat at https://gitter.im/romeovs/nano-promises](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/romeovs/nano-promises?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://img.shields.io/travis/romeovs/nano-promises.svg?style=flat-square)][travis]
 [![Coverage Status](https://img.shields.io/coveralls/romeovs/nano-promises.svg?style=flat-square)][coveralls]
 [![Dependencies](https://img.shields.io/david/romeovs/nano-promises.svg?style=flat-square)][david]
