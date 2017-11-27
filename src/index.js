@@ -42,7 +42,6 @@ var wrapper = function (methods, object) {
   });
 
   wrapped['follow'] = object['follow']
-
   return wrapped;
 };
 
