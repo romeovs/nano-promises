@@ -72,6 +72,7 @@ var promisify = function(nano) {
   , 'show'
   , 'atomic'
   , 'search'
+  , 'find'
   , {
       name: 'attachment'
     , methods: ['insert', 'get', 'destroy']
