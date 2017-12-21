@@ -41,6 +41,7 @@ var wrapper = function (methods, object) {
     }
   });
 
+  wrapped['follow'] = object['follow']
   return wrapped;
 };
 
@@ -54,13 +55,11 @@ var promisify = function(nano) {
   , 'compact'
   , 'replicate'
   , 'changes'
-  , 'follow'
   ];
 
   var dbMethods = [
     'insert'
   , 'destroy'
-  , 'follow'
   , 'get'
   , 'head'
   , 'copy'
